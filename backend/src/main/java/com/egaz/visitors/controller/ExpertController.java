@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/experts")
+@CrossOrigin(origins = "*")
 public class ExpertController {
     private final ExpertService service;
     public ExpertController(ExpertService service) { this.service = service; }
